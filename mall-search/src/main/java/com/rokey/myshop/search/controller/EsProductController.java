@@ -6,11 +6,11 @@ import com.rokey.myshop.search.domain.EsProduct;
 import com.rokey.myshop.search.service.EsProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -20,7 +20,7 @@ import java.util.List;
 @Api(tags = "EsProductController", description = "搜索商品管理")
 @RequestMapping("/esProduct")
 public class EsProductController {
-    @Autowired
+    @Resource
     private EsProductService esProductService;
 
     @ApiOperation(value = "导入所有数据库中商品到ES")
