@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a49639e8-8c42-4564-9e29-dbb2ecebfef7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/controller/MemberReadHistoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/domain/MemberReadHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/repository/MemberReadHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/service/MemberReadHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/service/impl/MemberReadHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/component/CancelOrderReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/component/CancelOrderSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/config/RabbitmqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/controller/OmsPortalOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/domain/OrderParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/domain/QueueEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/service/OmsPortalOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/service/impl/OmsPortalOrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/rokey/myshop/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/rokey/myshop/controller/UmsAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/rokey/myshop/service/impl/UmsAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/rokey/myshop/service/impl/UmsAdminServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-portal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/controller/MemberReadHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/rokey/myshop/controller/MemberReadHistoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-search/src/main/java/com/rokey/myshop/search/controller/EsProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/rokey/myshop/search/controller/EsProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +80,11 @@
       <recent name="com.rokey.myshop" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rokey.myshop.domain" />
       <recent name="com.rokey.myshop.search" />
       <recent name="com.rokey.myshop.dto" />
       <recent name="com.rokey.myshop.security.util" />
       <recent name="com.rokey.myshop.security.config" />
-      <recent name="com.rokey.myshop.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/mall-search/src/main/java/com/rokey/myshop/search" />
@@ -151,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589258565430</updated>
-      <workItem from="1589258569891" duration="39264000" />
+      <workItem from="1589258569891" duration="44258000" />
     </task>
     <servers />
   </component>
@@ -176,45 +177,45 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="451" y="318" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589340845976" />
-    <state width="1398" height="222" key="GridCell.Tab.0.bottom" timestamp="1589360511963">
+    <state width="1398" height="342" key="GridCell.Tab.0.bottom" timestamp="1589367582902">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511963" />
+    <state width="1398" height="342" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582902" />
     <state width="1878" height="222" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361421" />
-    <state width="1398" height="222" key="GridCell.Tab.0.center" timestamp="1589360511963">
+    <state width="1398" height="342" key="GridCell.Tab.0.center" timestamp="1589367582894">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.0.center/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511963" />
+    <state width="1398" height="342" key="GridCell.Tab.0.center/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582894" />
     <state width="1878" height="222" key="GridCell.Tab.0.center/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361420" />
-    <state width="1398" height="222" key="GridCell.Tab.0.left" timestamp="1589360511962">
+    <state width="1398" height="342" key="GridCell.Tab.0.left" timestamp="1589367582894">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.0.left/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511962" />
+    <state width="1398" height="342" key="GridCell.Tab.0.left/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582894" />
     <state width="1878" height="222" key="GridCell.Tab.0.left/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361419" />
-    <state width="1398" height="222" key="GridCell.Tab.0.right" timestamp="1589360511963">
+    <state width="1398" height="342" key="GridCell.Tab.0.right" timestamp="1589367582899">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.0.right/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511963" />
+    <state width="1398" height="342" key="GridCell.Tab.0.right/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582899" />
     <state width="1878" height="222" key="GridCell.Tab.0.right/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361420" />
-    <state width="1398" height="222" key="GridCell.Tab.1.bottom" timestamp="1589360511966">
+    <state width="1398" height="342" key="GridCell.Tab.1.bottom" timestamp="1589367582910">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511966" />
+    <state width="1398" height="342" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582910" />
     <state width="1878" height="222" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361423" />
-    <state width="1398" height="222" key="GridCell.Tab.1.center" timestamp="1589360511964">
+    <state width="1398" height="342" key="GridCell.Tab.1.center" timestamp="1589367582906">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.1.center/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511964" />
+    <state width="1398" height="342" key="GridCell.Tab.1.center/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582906" />
     <state width="1878" height="222" key="GridCell.Tab.1.center/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361422" />
-    <state width="1398" height="222" key="GridCell.Tab.1.left" timestamp="1589360511964">
+    <state width="1398" height="342" key="GridCell.Tab.1.left" timestamp="1589367582905">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.1.left/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511964" />
+    <state width="1398" height="342" key="GridCell.Tab.1.left/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582905" />
     <state width="1878" height="222" key="GridCell.Tab.1.left/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361421" />
-    <state width="1398" height="222" key="GridCell.Tab.1.right" timestamp="1589360511965">
+    <state width="1398" height="342" key="GridCell.Tab.1.right" timestamp="1589367582908">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="222" key="GridCell.Tab.1.right/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360511965" />
+    <state width="1398" height="342" key="GridCell.Tab.1.right/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589367582908" />
     <state width="1878" height="222" key="GridCell.Tab.1.right/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358361422" />
     <state x="258" y="123" key="Maven.ArtifactSearchDialog" timestamp="1589265926468">
       <screen x="0" y="23" width="1440" height="877" />
@@ -225,10 +226,10 @@
     </state>
     <state x="208" y="43" key="SettingsEditor/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589354476673" />
     <state x="1717" y="-133" key="SettingsEditor/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589357996662" />
-    <state x="421" y="216" width="666" height="554" key="find.popup" timestamp="1589360495819">
+    <state x="421" y="216" width="666" height="554" key="find.popup" timestamp="1589362019518">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="421" y="216" width="666" height="554" key="find.popup/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589360495819" />
+    <state x="421" y="216" width="666" height="554" key="find.popup/0.23.1440.877/1440.-157.1920.1057@0.23.1440.877" timestamp="1589362019518" />
     <state x="2001" y="76" width="798" height="591" key="find.popup/0.23.1440.877/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1589358269468" />
     <state x="88" y="124" key="new project wizard" timestamp="1589356460435">
       <screen x="0" y="23" width="1440" height="877" />
