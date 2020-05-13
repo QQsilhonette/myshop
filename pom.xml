@@ -30,7 +30,6 @@
         <skipTests>true</skipTests>
         <mall-mbg.version>1.0.0-SNAPSHOT</mall-mbg.version>
         <mall-common.version>1.0.0-SNAPSHOT</mall-common.version>
-<!--        <mall-security.version>1.0.0-SNAPSHOT</mall-security.version>-->
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
         <pagehelper.version>5.1.8</pagehelper.version>
         <druid.version>1.1.10</druid.version>
@@ -41,6 +40,7 @@
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
         <mysql-connector.version>8.0.15</mysql-connector.version>
         <spring-data-commons.version>2.2.6.RELEASE</spring-data-commons.version>
+        <hutool.version>4.5.7</hutool.version>
         <jjwt.version>0.9.0</jjwt.version>
     </properties>
 
@@ -92,12 +92,6 @@
                 <artifactId>mall-mbg</artifactId>
                 <version>${mall-mbg.version}</version>
             </dependency>
-            <!--mall安全模块-->
-<!--            <dependency>-->
-<!--                <groupId>com.rokey.myshop</groupId>-->
-<!--                <artifactId>mall-security</artifactId>-->
-<!--                <version>1.0.0-SNAPSHOT</version>-->
-<!--            </dependency>-->
             <!--MyBatis分页插件starter-->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
@@ -157,11 +151,17 @@
                 <artifactId>spring-data-commons</artifactId>
                 <version>${spring-data-commons.version}</version>
             </dependency>
+            <!--Hutool Java工具包-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>4.5.7</version>
+            </dependency>
             <!--JWT(Json Web Token)登录支持-->
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
-                <version>${jjwt.version}</version>
+                <version>0.9.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

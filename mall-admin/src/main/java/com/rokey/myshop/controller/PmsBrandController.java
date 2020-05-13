@@ -6,6 +6,7 @@ import com.rokey.myshop.model.PmsBrand;
 import com.rokey.myshop.service.PmsBrandService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +29,7 @@ public class PmsBrandController {
     @Resource
     private PmsBrandService brandService;
 
+    @PreAuthorize("hasAuthority('pms:brand:read')")
     @ApiOperation(value = "获取所有品牌列表", notes="获取所有品牌列表")
     @RequestMapping(value="listAll", method = RequestMethod.GET)
     @ResponseBody
