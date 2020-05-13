@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mall-admin" />
         <module name="mall-common" />
+        <module name="mall-search" />
         <module name="mall-portal" />
         <module name="mall-mbg" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="mall-common" options="-parameters" />
       <module name="mall-mbg" options="-parameters" />
       <module name="mall-portal" options="-parameters" />
+      <module name="mall-search" options="-parameters" />
       <module name="mall-security" options="-parameters" />
     </option>
   </component>
